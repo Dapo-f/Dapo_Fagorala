@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <style>
+      /* Swiper */
+      .swiper-section {
+        background: #1e293b;
+        border-radius: 16px;
+        overflow: hidden;
+        margin-bottom: 3rem;
+        padding: 2rem 0;
+      }
+
+      .swiper {
+        width: 100%;
+        padding: 20px 0 40px;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 130px; /* was 160px */
+        height: 260px; /* was 320px */
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%; /* add this */
+        object-fit: cover;
+        border-radius: 16px;
+      }
+
+      .swiper-pagination-bullet {
+        background: #64748b;
+        opacity: 1;
+      }
+      .swiper-pagination-bullet-active {
+        background: #fff;
+      }
+    </style>
+    <title>Utah Rock</title>
+  </head>
+  <body>
+    <div class="page-wrap">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb fade-up">
+        <a href="index.html">Home</a>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+        <a href="index.html#projects">Projects</a>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+        <span>Utah Rock</span>
+      </div>
+
+      <!-- Project header -->
+      <header class="project-header">
+        <div class="project-tag fade-up">
+          <ion-icon name="color-palette-outline"></ion-icon>
+          UI/UX Design
+        </div>
+        <h1 class="faded-up delays-1">Utah Rock</h1>
+        <p class="faded-up delays-2">
+          A music app designed for booking concerts and buying albums. Covers
+          the full user journey from discovery to checkout, built entirely in
+          Figma.
+        </p>
+
+        <div class="meta-row faded-up delays-3">
+          <div class="meta-item">
+            <span class="meta-label">Tool</span>
+            <span class="meta-value">Figma</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Type</span>
+            <span class="meta-value">UI/UX Design</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Screens</span>
+            <span class="meta-value">11 screens</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Carousel -->
+      <div class="swiper-section faded-up">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="music/iPhone 13 & 14 - 1.png"
+                alt="Utah Rock splash screen"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="music/Home page.png" alt="Home page" />
+            </div>
+            <div class="swiper-slide">
+              <img src="music/Home page 2.png" alt="Home page variant 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="music/Home page 3.png" alt="Home page variant 3" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="music/Airtist profile.png"
+                alt="Artist profile screen"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="music/Event details.png" alt="Event details screen" />
+            </div>
+            <div class="swiper-slide">
+              <img src="music/search.png" alt="Search screen" />
+            </div>
+            <div class="swiper-slide">
+              <img src="music/Wishlist.png" alt="Wishlist screen" />
+            </div>
+            <div class="swiper-slide">
+              <img src="music/Check out flow 1.png" alt="Checkout step 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="music/Check out flow 2.png" alt="Checkout step 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="music/Check out flow 3.png" alt="Checkout step 3" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <h2
+        style="
+          font-family: &quot;Cabinet Grotesk&quot;, sans-serif;
+          font-weight: 800;
+          font-size: 1.4rem;
+          letter-spacing: -0.02em;
+          color: var(--text-1);
+          margin-bottom: 1.25rem;
+        "
+      >
+        What I designed
+      </h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <ion-icon class="feature-icon" name="ticket-outline"></ion-icon>
+          <div>
+            <h4>Concert booking flow</h4>
+            <p>
+              Browse events by genre and location, view details, and book
+              tickets in a few taps.
+            </p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <ion-icon
+            class="feature-icon"
+            name="musical-notes-outline"
+          ></ion-icon>
+          <div>
+            <h4>Album & singles store</h4>
+            <p>
+              Purchase music directly, with a clean product page and a 3-step
+              checkout flow.
+            </p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <ion-icon class="feature-icon" name="person-outline"></ion-icon>
+          <div>
+            <h4>Artist profiles</h4>
+            <p>
+              Dedicated pages for each artist showing their events, discography,
+              and bio.
+            </p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <ion-icon class="feature-icon" name="heart-outline"></ion-icon>
+          <div>
+            <h4>Wishlist</h4>
+            <p>
+              Save concerts and albums to revisit later — a simple pattern that
+              reduces purchase friction.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back -->
+      <a href="index.html#projects" class="back-link">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+        Back to projects
+      </a>
+    </div>
+
+    <footer>
+      <p class="footer-copy">&copy; 2026 Adedapo Fagorala.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 40,
+          stretch: 0,
+          depth: 120,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: { el: ".swiper-pagination" },
+      });
+    </script>
+  </body>
+</html>

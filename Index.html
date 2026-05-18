@@ -13,7 +13,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <title>Adedapo Fagorala</title>
-    
+
   </head>
   <body>
     <!-- ── Nav ───────────────────────────────────────────────────── -->
@@ -446,7 +446,12 @@
     <!-- ── Footer ─────────────────────────────────────────────────── -->
     <footer>
       <p>Adedapo F. — Lagos, Nigeria</p>
-      <p>Built with HTML, CSS &amp; intentionality &nbsp;&#9670;&nbsp; 2026</p>
+      <p>Built with HTML, CSS &amp; intentionality &nbsp;&#9670;&nbsp; <span id="footer-desc"></span></p>
     </footer>
+    <script>
+        const desc = document.getElementById("footer-desc")
+        const date = new Date().getFullYear()
+        desc.textContent = date
+    </script>
   </body>
 </html>
